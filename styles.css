@@ -895,7 +895,7 @@ main section:last-child{
 .faq-item{
     border: 1px solid #D9D9D9;
     border-radius: 8px;
-    padding: 24px;
+    padding: 16px;
 }
 .faq-title{
     display: flex;
@@ -918,7 +918,6 @@ main section:last-child{
 }
 .faq-item:has(.collapsed){
     background-color: #F5F5F5;
-    padding: 16px;
 }
 
 /* faq-section */
