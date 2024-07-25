@@ -102,19 +102,26 @@ jQuery(function ($){
 
 });
 
-if(document.querySelector('.banner-slide')){
-    banner_slide = new Splide('.banner-slide',{
-        perPage:1,
+function initializeSplide(selector, options, extensions) {
+    document.querySelectorAll(selector).forEach(element => {
+        new Splide(element, options).mount(extensions);
+    });
+}
+
+if (document.querySelector('.banner-slide')) {
+    initializeSplide('.banner-slide', {
+        perPage: 1,
         pagination: false,
         breakpoints: {
-            1024:{
+            1024: {
                 arrows: false,
             }
         }
-    }).mount();
+    });
 }
+
 if (document.querySelector('.sale-list-slide')) {
-    sale_list_slide = new Splide('.sale-list-slide', {
+    initializeSplide('.sale-list-slide', {
         type: 'loop',
         perPage: 5,
         arrows: false,
@@ -123,47 +130,50 @@ if (document.querySelector('.sale-list-slide')) {
         width: 'auto',
         autoScroll: {
             speed: 0.5,
-            pauseOnHover:false,
+            pauseOnHover: false,
         },
-    }).mount(window.splide.Extensions); //
+    }, window.splide.Extensions);
 }
 
-if(document.querySelector('.feature-product-list')){
-    feature_slide = new Splide('.feature-product-list',{
-        perPage:4,
+if (document.querySelector('.feature-product-list')) {
+    initializeSplide('.feature-product-list', {
+        perPage: 4,
         arrows: false,
         pagination: false,
         gap: 30,
         breakpoints: {
-            1024:{
+            1024: {
                 perPage: 3,
             },
-            991:{
+            991: {
                 perPage: 2,
             },
-            575:{
+            575: {
                 perPage: 1,
             }
         }
-    }).mount();
+    });
 }
-if(document.querySelector('.blog-list-slide')){
-    blog_list_slide = new Splide('.blog-list-slide',{
-        perPage:4,
+
+if (document.querySelector('.blog-list-slide')) {
+    initializeSplide('.blog-list-slide', {
+        perPage: 4,
         arrows: false,
         pagination: false,
         gap: 26,
         breakpoints: {
-            1024:{
+            1024: {
                 perPage: 3,
             },
-            991:{
+            991: {
                 perPage: 2,
             },
-            575:{
+            575: {
                 perPage: 1,
             }
         }
-    }).mount();
+    });
 }
+
+
 
