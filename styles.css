@@ -44,14 +44,13 @@ body {
     font-family: var(--secondary-fonts);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    font-weight: 500;
+    overflow-x: hidden;
 }
 
 img {
     max-width: 100%;
     transition: var(--default-transition);
-}
-body, html{
-    overflow-x: clip;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -500,13 +499,18 @@ ins{
     transform: translateY(-50%);
     transition: var(--default-transition);
     height: 50px;
-    right: -15px;
+    right: -10px;
     max-width: 0px;
     width: 400px;
     background-color: #fff;
     border-radius: 30px;
     opacity: 0;
     visibility: hidden;
+    display: flex;
+    align-items: center;
+}
+.search-box > *{
+    width: 100%;
 }
 .search-box.open{
     max-width: 500px;
@@ -523,17 +527,18 @@ ins{
     padding: 10px 15px;
     border-radius: 30px;
     border: 1px solid;
-    padding-right: 50px;
+    padding-right: 45px;
 }
 .search-box .close-btn{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: 16px;
+    cursor: pointer;
 }
 .search-box .close-btn svg{
-    height: 20px;
-    width: 20px;
+    height: 15px;
+    width: 15px;
 }
 .search-cart .item > a{
     display: flex;
@@ -1116,6 +1121,7 @@ main section:last-child{
     color: #fff;
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 50px;
 }

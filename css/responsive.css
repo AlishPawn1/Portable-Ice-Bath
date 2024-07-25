@@ -89,7 +89,7 @@
     .dropdown-btn{
         display: grid;
         place-content: center;
-        background-color: var(--light-white);
+        /* background-color: var(--light-white); */
         height: 20px;
         width: 20px;
         margin: 0 !important;
@@ -149,6 +149,9 @@
     }
     .footer-content{
         max-width: 400px;
+    }
+    .copyright-list{
+        gap: 24px;
     }
 }
 @media screen and (max-width: 991px) {
@@ -251,8 +254,12 @@
     .container{
         padding: 0 20px ;
     }
-    .primary-menu{
+    .bottom-header .nav-bar{
         max-width: 100%;
+    }
+    .bottom-header .logo{
+        position: relative;
+        z-index: 10;
     }
     .announcement-bar > *{
         padding: 0;
