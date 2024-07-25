@@ -46,6 +46,7 @@ jQuery(function ($){
             $(this).toggleClass('active');
             $('.overlay').toggleClass('active');
             $('.nav-bar').toggleClass('active');
+            $('.bottom-header .logo').toggleClass('active');
             $('body').addClass('overflow-hidden');
         });
     
@@ -53,6 +54,7 @@ jQuery(function ($){
             $('.overlay').removeClass('active');
             $('.hamburger').removeClass('active');
             $('.nav-bar').removeClass('active');
+            $('.bottom-header .logo').removeClass('active');
             $('body').removeClass('overflow-hidden');
         });
 

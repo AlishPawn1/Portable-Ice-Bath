@@ -251,6 +251,9 @@
         font-size: 26px !important;
         line-height: 34px !important;
     }
+    .custom-gap-48-50 {
+        --bs-gutter-x: 40px;
+    }
     .container{
         padding: 0 20px ;
     }
@@ -260,6 +263,13 @@
     .bottom-header .logo{
         position: relative;
         z-index: 10;
+        transition: var(--default-transition);
+    }
+    .site-header .bottom-header .logo.active{
+        bottom: 43px;
+    }
+    .site-header.sticky .bottom-header .logo.active{
+        bottom: -6px;
     }
     .announcement-bar > *{
         padding: 0;
