@@ -500,7 +500,7 @@ ins{
     transform: translateY(-50%);
     transition: var(--default-transition);
     height: 50px;
-    right: -20px;
+    right: -15px;
     max-width: 0px;
     width: 400px;
     background-color: #fff;
@@ -530,6 +530,10 @@ ins{
     top: 50%;
     transform: translateY(-50%);
     right: 16px;
+}
+.search-box .close-btn svg{
+    height: 20px;
+    width: 20px;
 }
 .search-cart .item > a{
     display: flex;
