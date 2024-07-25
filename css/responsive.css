@@ -8,6 +8,9 @@
 }
 @media screen and (max-width: 1024px) {
 
+    .site-header{
+        min-height: 145px;
+    }
     .bottom-header .nav-bar{
         position: fixed;
         right: -100%;
@@ -137,6 +140,12 @@
     }
 }
 @media screen and (max-width: 991px) {
+    .site-header{
+        min-height: 135px;
+    }
+    main section:last-child {
+        padding-bottom: 220px;
+    }
     .two-column .left-content .content{
         margin: 0;
     }
@@ -184,9 +193,6 @@
         max-width: 100%;
         flex: 0 0 100%;
     }
-    .faq-section{
-        padding-bottom: 220px;
-    }
     .newsletter-content{
         flex-direction: column;
         align-items: start;
@@ -215,6 +221,12 @@
     :root{
         --section-md-gaps: 64px;
     }
+    .site-header {
+        min-height: 107px;
+    }
+    .bottom-header nav{
+        padding: 14px 0;
+    }
     .f-s-1{
         font-size: 28px !important;
         line-height: 34px !important;
@@ -229,7 +241,7 @@
     .primary-menu{
         max-width: 100%;
     }
-    .announcement-bar .col-md-6{
+    .announcement-bar > *{
         padding: 0;
     }
     .banner-box{

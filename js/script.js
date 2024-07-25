@@ -1,11 +1,27 @@
 
 jQuery(function ($){
 
+    $(window).scroll(function () {
+		var topHeight = $('.top-header').outerHeight();
+		var viewFooter = $('body').height() - $('footer').outerHeight() - ($(window).height() / 2);
+		if($(window).width() < 991){
+			viewFooter = $('body').height() - $('footer').outerHeight();
+		}
+		if($('.top-header').css('display') == 'none'){
+			topHeight = 0;
+		}
+		if ($(window).scrollTop() > topHeight && $(window).scrollTop() < viewFooter) {
+			$('.site-header').addClass('sticky');
+		} else {
+			$('.site-header').removeClass('sticky');
+		}
+    });
+
+    $('main').first().addClass('header-offset').css('--header-offset', $('.site-header').outerHeight() + 'px');
 
     $(document).ready(function() {
-        $(".primary-menu li.menu-dropdown > a").append('<span class="dropdown-btn"><svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.66113 5.5L0.661133 0.5H10.6611L5.66113 5.5Z" fill="#1D1B20"/></svg></span>');
-
-    
+        $(".primary-menu li.menu-dropdown > a").append('<span class="dropdown-btn"><svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.66113 5.5L0.661133 0.5H10.6611L5.66113 5.5Z" fill="#1D1B20"/></svg></span>');    
+        
         $('.dropdown-btn').on('click', function(event) {
             event.preventDefault();
             event.stopPropagation();
@@ -79,7 +95,6 @@ jQuery(function ($){
         $(window).resize(function() {
             cloneTopBarIcon();
         });
-        
         
     });
 

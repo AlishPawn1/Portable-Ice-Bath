@@ -371,6 +371,8 @@ ins{
 }
 .bottom-header{
     box-shadow: 0px 6px 13px -4px #c6c6c6;
+    transition: var(--default-transition);
+    background-color: #ffffff;
 }
 .bottom-header nav{
     display: flex;
@@ -379,6 +381,7 @@ ins{
     align-items: center;
     background-color: #fff;
     gap: 200px;
+    transition: var(--default-transition);
 }
 .bottom-header .logo{
     max-width: 170px;
@@ -547,6 +550,34 @@ ins{
     opacity: 0.5;
     visibility: visible;
 }
+.site-header {
+    box-shadow: 0 0 5px -3px;
+    min-height: 156px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: #fff;
+    z-index: 9;
+}
+.site-header.sticky .bottom-header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	box-shadow: 0 0 5px -3px;
+	z-index: 9;
+}
+.site-header.sticky .bottom-header nav{
+    padding: 10px 0;
+}
+main.header-offset {
+    padding-top: var(--header-offset);
+}
+main section:last-child{
+    padding-bottom:  202px;
+}
+
 /* header */
 
 /* banner */
@@ -793,7 +824,7 @@ ins{
 /* faq-section */
 
 .faq-section{
-    padding: 112px 0 202px;
+    padding: 112px 0;
 }
 .faq-section .two-column .left-content{
     align-items: start;
