@@ -695,23 +695,6 @@ main section:last-child{
     position: relative;
     z-index: 2;
 }
-.hero-section .right-content .image::before, .hero-section .right-content .image::after{
-    content: '';
-    --size: 300px;
-    height: var(--size);
-    width: var(--size);
-    background-color: #D1E5FF;
-    position: absolute;
-    z-index: 1;
-}
-.hero-section .right-content .image::before{
-    top: 0;
-    left: -30px;
-}
-.hero-section .right-content .image::after{
-    bottom: 0;
-    right: -30px;
-}
 
 /* hero-section */
 

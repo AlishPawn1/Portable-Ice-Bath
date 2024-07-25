@@ -282,17 +282,7 @@
     }
     .hero-section .right-content .image{
         height: 300px;
-        width: 300px;
         margin: 0 auto;
-    }
-    .hero-section .right-content .image::before, .hero-section .right-content .image::after{
-        --size: 180px;
-    }
-    .hero-section .right-content .image::before{
-        left: -20px;
-    }
-    .hero-section .right-content .image::after{
-        right: -20px;
     }
     .three-column-item{
         width: 100%;
