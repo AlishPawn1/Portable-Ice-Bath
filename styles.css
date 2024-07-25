@@ -593,9 +593,6 @@ main section:last-child{
 .banner-box{
     padding: 25px 0;
 }
-.banner-box .description p{
-    color: #7E878D;
-}
 .banner-box .right-content .image{
     height: 570px;
     max-width: 570px;
@@ -807,6 +804,9 @@ main section:last-child{
     color: var(--light-text-color);
     font-weight: 500;
 }
+.blog-box .description > *:last-child{
+    margin-bottom: 0;
+}
 .blog-box:hover .title{
     color: var(--secondary-color);
 }
@@ -867,10 +867,12 @@ main section:last-child{
     font-size: 14px;
     line-height: 20px;
     color: var(--light-text-color);
+    word-break: break-word;
 }
 .faq-body p a{
     color: var(--light-text-color);
     text-decoration: underline;
+    display: inline;
 }
 .faq-item + .faq-item{
     margin-top: 16px;
