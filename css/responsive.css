@@ -270,6 +270,9 @@
     .banner-box .right-content .image{
         height: 375px;
     }
+    .feature-box .btn-box{
+        padding: 14px 43px;
+    }
     
     .bottom-header .logo img{
         width: 135px;
@@ -279,9 +282,17 @@
     }
     .hero-section .right-content .image{
         height: 300px;
+        width: 300px;
+        margin: 0 auto;
     }
     .hero-section .right-content .image::before, .hero-section .right-content .image::after{
         --size: 180px;
+    }
+    .hero-section .right-content .image::before{
+        left: -20px;
+    }
+    .hero-section .right-content .image::after{
+        right: -20px;
     }
     .three-column-item{
         width: 100%;

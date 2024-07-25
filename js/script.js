@@ -120,7 +120,7 @@ if (document.querySelector('.sale-list-slide')) {
         gap: 30,
         width: 'auto',
         autoScroll: {
-            speed: 1,
+            speed: 0.5,
             pauseOnHover:false,
         },
     }).mount(window.splide.Extensions); //
