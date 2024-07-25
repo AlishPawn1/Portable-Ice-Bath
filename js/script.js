@@ -176,4 +176,80 @@ if (document.querySelector('.blog-list-slide')) {
 }
 
 
+// if (document.querySelector('.banner-slide')) {
+//     document.querySelectorAll('.banner-slide').forEach(element => {
+//         new Splide(element, {
+//             perPage: 1,
+//             pagination: false,
+//             breakpoints: {
+//                 1024: {
+//                     arrows: false,
+//                 }
+//             }
+//         }).mount();
+//     });
+// }
+
+// if (document.querySelector('.sale-list-slide')) {
+//     document.querySelectorAll('.sale-list-slide').forEach(element => {
+//         new Splide(element, {
+//             type: 'loop',
+//             perPage: 5,
+//             arrows: false,
+//             pagination: false,
+//             gap: 30,
+//             width: 'auto',
+//             autoScroll: {
+//                 speed: 0.5,
+//                 pauseOnHover: false,
+//             },
+//         }).mount(window.splide.Extensions);
+//     });
+// }
+
+// if (document.querySelector('.feature-product-list')) {
+//     document.querySelectorAll('.feature-product-list').forEach(element => {
+//         new Splide(element, {
+//             perPage: 4,
+//             arrows: false,
+//             pagination: false,
+//             gap: 30,
+//             breakpoints: {
+//                 1024: {
+//                     perPage: 3,
+//                 },
+//                 991: {
+//                     perPage: 2,
+//                 },
+//                 575: {
+//                     perPage: 1,
+//                 }
+//             }
+//         }).mount();
+//     });
+// }
+
+// if (document.querySelector('.blog-list-slide')) {
+//     document.querySelectorAll('.blog-list-slide').forEach(element => {
+//         new Splide(element, {
+//             perPage: 4,
+//             arrows: false,
+//             pagination: false,
+//             gap: 26,
+//             breakpoints: {
+//                 1024: {
+//                     perPage: 3,
+//                 },
+//                 991: {
+//                     perPage: 2,
+//                 },
+//                 575: {
+//                     perPage: 1,
+//                 }
+//             }
+//         }).mount();
+//     });
+// }
+
+
 
